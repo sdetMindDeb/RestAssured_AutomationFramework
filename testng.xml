@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/61090523/Downloads/Java project/AutomationFramework_RA/src/test/java/Testcases">
+        <classes>
+            <!--<class name="Testcases.DataDrivenTest">
+            <methods><include name="testPostUser"/>
+                <include name="testDeleteUserByName"/></methods>
+        </class>-->
+            <class name="Testcases.userTest">
+                <methods><include name="testPostUser"/>
+                    <include name="testGetUserByName"/>
+                    <include name="testUpdateUserByName"/>
+                    <include name="testDeleteUserByName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
